@@ -1,7 +1,7 @@
 
 import { motion } from "framer-motion";
 import LinkButton from "./LinkButton";
-import { AtSign, Twitter, Github } from "lucide-react";
+import { Mail, X, Discord } from "lucide-react";
 
 const ProfileCard = () => {
   return (
@@ -35,19 +35,19 @@ const ProfileCard = () => {
           
           <div className="grid grid-cols-3 gap-4">
             <LinkButton
-              icon={<AtSign className="w-5 h-5" />}
+              icon={<Mail className="w-5 h-5" />}
               href="mailto:stanleytrevs@gmail.com"
               label="Email"
               delay={0.6}
             />
             <LinkButton
-              icon={<Twitter className="w-5 h-5" />}
+              icon={<X className="w-5 h-5" />}
               href="https://x.com/stanleytrevis"
               label="Twitter"
               delay={0.7}
             />
             <LinkButton
-              icon={<Github className="w-5 h-5" />}
+              icon={<Discord className="w-5 h-5" />}
               href="discord.gg/wx6DsDYu"
               label="Discord"
               delay={0.8}
