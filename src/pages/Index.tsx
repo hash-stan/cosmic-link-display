@@ -1,6 +1,7 @@
 
 import StarBackground from "@/components/StarBackground";
 import ProfileCard from "@/components/ProfileCard";
+import CursorEffect from "@/components/CursorEffect";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 
@@ -15,6 +16,7 @@ const Index = () => {
   return (
     <div className="relative min-h-screen flex items-center justify-center p-4">
       <StarBackground />
+      <CursorEffect />
       
       <motion.div
         initial={{ opacity: 0 }}
