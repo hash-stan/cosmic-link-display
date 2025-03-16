@@ -1,11 +1,30 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import StarBackground from "@/components/StarBackground";
+import ProfileCard from "@/components/ProfileCard";
+import { useEffect } from "react";
+import { motion } from "framer-motion";
 
 const Index = () => {
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <div className="relative min-h-screen flex items-center justify-center p-4">
+      <StarBackground />
+      
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        className="absolute inset-0 bg-gradient-radial from-accent/5 to-transparent pointer-events-none"
+      />
+      
+      <div className="z-10">
+        <ProfileCard />
       </div>
     </div>
   );
