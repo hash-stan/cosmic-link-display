@@ -1,7 +1,7 @@
 
 import { motion } from "framer-motion";
 import LinkButton from "./LinkButton";
-import { Mail, X, MessageSquare } from "lucide-react";
+import { Mail } from "lucide-react";
 
 const ProfileCard = () => {
   return (
@@ -41,13 +41,31 @@ const ProfileCard = () => {
               delay={0.6}
             />
             <LinkButton
-              icon={<X className="w-5 h-5" />}
+              icon={
+                <div className="relative w-5 h-5">
+                  <img 
+                    src="https://i.imgur.com/nlGdpKl.png" 
+                    alt="X" 
+                    className="w-full h-full object-contain"
+                  />
+                  <div className="absolute inset-0 bg-white opacity-100 mix-blend-screen"></div>
+                </div>
+              }
               href="https://x.com/stanleytrevis"
               label="Twitter"
               delay={0.7}
             />
             <LinkButton
-              icon={<MessageSquare className="w-5 h-5" />}
+              icon={
+                <div className="relative w-5 h-5">
+                  <img 
+                    src="https://i.imgur.com/dastgOA.png" 
+                    alt="Discord" 
+                    className="w-full h-full object-contain"
+                  />
+                  <div className="absolute inset-0 bg-white opacity-100 mix-blend-screen"></div>
+                </div>
+              }
               href="discord.gg/wx6DsDYu"
               label="Discord"
               delay={0.8}
