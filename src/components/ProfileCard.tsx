@@ -1,7 +1,7 @@
 
 import { motion } from "framer-motion";
 import LinkButton from "./LinkButton";
-import { Mail, X, Discord } from "lucide-react";
+import { Mail, X, MessageSquare } from "lucide-react";
 
 const ProfileCard = () => {
   return (
@@ -47,7 +47,7 @@ const ProfileCard = () => {
               delay={0.7}
             />
             <LinkButton
-              icon={<Discord className="w-5 h-5" />}
+              icon={<MessageSquare className="w-5 h-5" />}
               href="discord.gg/wx6DsDYu"
               label="Discord"
               delay={0.8}
