@@ -65,7 +65,7 @@
   }
   
   .link-icon-wrapper {
-    @apply relative glass-panel p-4 flex items-center justify-center transition-all duration-300 overflow-hidden group;
+    @apply relative glass-panel p-4 flex items-center justify-center transition-all duration-300 overflow-hidden;
   }
   
   .link-icon-wrapper::before {

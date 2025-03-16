@@ -23,7 +23,7 @@ const LinkButton = ({ icon, href, label, delay = 0 }: LinkButtonProps) => {
         ease: [0.22, 1, 0.36, 1]
       }}
       whileHover={{ y: -3 }}
-      className="link-icon-wrapper"
+      className="link-icon-wrapper group"
       aria-label={label}
     >
       <div className="relative z-10">
