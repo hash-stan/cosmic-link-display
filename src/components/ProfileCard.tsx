@@ -44,11 +44,10 @@ const ProfileCard = () => {
               icon={
                 <div className="relative w-5 h-5">
                   <img 
-                    src="https://i.imgur.com/nlGdpKl.png" 
+                    src="https://i.imgur.com/9VcMLCL.png" 
                     alt="X" 
                     className="w-full h-full object-contain"
                   />
-                  <div className="absolute inset-0 bg-white opacity-100 mix-blend-screen"></div>
                 </div>
               }
               href="https://x.com/stanleytrevis"
@@ -63,7 +62,6 @@ const ProfileCard = () => {
                     alt="Discord" 
                     className="w-full h-full object-contain"
                   />
-                  <div className="absolute inset-0 bg-white opacity-100 mix-blend-screen"></div>
                 </div>
               }
               href="discord.gg/wx6DsDYu"
