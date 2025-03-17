@@ -64,7 +64,7 @@ const ProfileCard = () => {
                   />
                 </div>
               }
-              href="discord.gg/wx6DsDYu"
+              href="https://discord.gg/wx6DsDYu"
               label="Discord"
               delay={0.8}
             />
